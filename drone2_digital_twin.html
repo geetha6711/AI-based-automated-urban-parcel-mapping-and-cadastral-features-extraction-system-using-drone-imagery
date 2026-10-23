@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Twin - Urban Parcel Mapping</title>
+<style>
+  body { font-family: Arial; background:#111; color:#eee; text-align:center; }
+  .container { position: relative; display:inline-block; margin-top:20px; }
+  img { max-width: 900px; }
+  .plot {
+    position: absolute; border: 2px solid lime; cursor: pointer;
+    background: rgba(0,255,0,0.05);
+  }
+  .plot:hover { background: rgba(0,255,0,0.35); }
+  .tooltip {
+    display: none; position: absolute; background: #000; color:#0f0;
+    padding: 6px 10px; border: 1px solid lime; border-radius:5px; font-size:13px;
+    white-space: nowrap; z-index: 10;
+  }
+  .plot:hover .tooltip { display: block; }
+  h1 { color: #0f0; }
+  .summary { margin: 15px; font-size: 16px; }
+</style>
+</head>
+<body>
+  <h1> Urban Parcel Digital Twin</h1>
+  <div class="summary">
+    Total Parcels: <b>2</b> &nbsp; | &nbsp;
+    Total Area: <b>241841.9 sqft</b>
+  </div>
+  <div class="container">
+    <img src="drone2_parcel_map.jpg" id="mapImg">
+
+    <div class="plot" style="left:109px; top:0px; width:1171px; height:853px;">
+      <div class="tooltip">Plot 1<br>Area: 223428.1 sqft</div>
+    </div>
+
+    <div class="plot" style="left:0px; top:0px; width:124px; height:853px;">
+      <div class="tooltip">Plot 2<br>Area: 18413.8 sqft</div>
+    </div>
+
+  </div>
+</body>
+</html>

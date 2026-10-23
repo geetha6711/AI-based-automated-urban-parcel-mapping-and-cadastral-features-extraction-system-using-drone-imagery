@@ -1,0 +1,23 @@
+{
+  "image": "output/drone2_parcel_map.jpg",
+  "total_parcels": 2,
+  "total_sqft": 241841.9,
+  "parcels": [
+    {
+      "plot_id": 1,
+      "x": 109,
+      "y": 0,
+      "width": 1171,
+      "height": 853,
+      "area_sqft": 223428.1
+    },
+    {
+      "plot_id": 2,
+      "x": 0,
+      "y": 0,
+      "width": 124,
+      "height": 853,
+      "area_sqft": 18413.8
+    }
+  ]
+}
